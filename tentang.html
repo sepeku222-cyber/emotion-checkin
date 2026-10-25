@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Proyek · Kenali Emosiku</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div>
+      <h1>ℹ️ Tentang Proyek</h1>
+      <div class="sub">Kenali Emosiku Sebelum Belajar</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <h2 class="seksi-judul">Apa ini?</h2>
+      <p class="seksi-sub">
+        Website <em>Emotion Check-In</em> ini adalah produk proyek UAS PPG Prajab
+        yang bertujuan meningkatkan <strong>school well-being</strong> melalui
+        integrasi 5 dimensi <strong>Pembelajaran Sosial-Emosional (PSE)</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 class="seksi-judul">Cara Kerja</h2>
+      <ol class="daftar-nomor">
+        <li>Siswa memilih namanya (hanya untuk sapaan sesi).</li>
+        <li>Siswa memindai wajah — sistem mendeteksi <strong>7 ekspresi dasar</strong>
+            (senang, sedih, marah, cemas, terkejut, tidak nyaman, netral)
+            beserta persentasenya.</li>
+        <li>Siswa <strong>mengonfirmasi atau mengoreksi</strong> hasil — karena
+            ekspresi wajah tidak selalu sama dengan emosi sebenarnya.</li>
+        <li>Sistem menampilkan tips <em>coping</em> sesuai emosi.</li>
+        <li>Siswa memilih mau cerita ke siapa (guru/teman/ortu/sendiri).</li>
+        <li>Selesai — semua data dihapus.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2 class="seksi-judul">🔒 Privasi</h2>
+      <ul class="daftar-poin">
+        <li>Deteksi dilakukan <strong>sepenuhnya di perangkat</strong> (on-device)
+            menggunakan <code>face-api.js</code>.</li>
+        <li>Gambar wajah <strong>tidak dikirim ke server</strong>.</li>
+        <li><strong>Tidak ada database</strong>, tidak ada Local Storage,
+            tidak ada Cookies untuk data emosi.</li>
+        <li>Data emosi hanya ada di <strong>memori sesi</strong> dan hilang saat
+            halaman ditutup atau tombol "Selesai" ditekan.</li>
+        <li>Siswa dapat <strong>melewati kamera</strong> dan memilih emosi secara manual.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="seksi-judul">Integrasi 5 Dimensi PSE</h2>
+      <table class="tabel-pse">
+        <tr><th>Dimensi</th><th>Wujud</th></tr>
+        <tr><td>Self-awareness</td><td>Konfirmasi/koreksi hasil deteksi</td></tr>
+        <tr><td>Self-management</td><td>Tips coping sesuai emosi</td></tr>
+        <tr><td>Social awareness</td><td>Circle time lanjutan di kelas</td></tr>
+        <tr><td>Relationship skills</td><td>Opsi "mau cerita ke siapa?"</td></tr>
+        <tr><td>Responsible decision making</td><td>Pilihan lewati/ganti/simpan sendiri</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2 class="seksi-judul">Teknologi</h2>
+      <p class="seksi-sub">
+        HTML, CSS, JavaScript murni · <code>face-api.js</code> 0.22.2 ·
+        Model <code>tinyFaceDetector</code> + <code>faceExpressionNet</code> ·
+        Tanpa backend, tanpa database.
+      </p>
+    </div>
+
+    <button onclick="window.location.href='index.html'" class="btn btn-primary">
+      ← Kembali ke Halaman Awal
+    </button>
+
+  </main>
+
+  <footer class="footer">
+    Proyek PPG · Emotion Check-In · Data tidak disimpan
+  </footer>
+
+</body>
+</html>
